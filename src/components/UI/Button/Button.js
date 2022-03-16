@@ -11,9 +11,13 @@ import "./Button.css";
 //const Button=styledComponents.button``;
 //button`` is like a function. similarly div, p and all present
 //syntax to create a styled component and css code goes between commas
-
+//adding media querries - styling based on device size
 const Button = styledComponents.button`
 
+width: 100%;
+@media(min-width:768px){
+width:auto;
+}
   font: inherit;
   padding: 0.5rem 1.5rem;
   border: 1px solid #8b005d;
